@@ -137,9 +137,6 @@ font-family: raleway;
               color: white;
 
             }
-            .button1:hover + #extra {
-              display: block;
-            }
            .solution{
 
                width: 320px;
@@ -164,9 +161,6 @@ font-family: raleway;
                 border:2px solid white;
               color: white;
 
-            }
-            .button2:hover + #add{
-              display: block;
             }
           .benefits{
 
@@ -193,9 +187,6 @@ font-family: raleway;
               color: white;
 
             }
-            .button3:hover + #add3{
-              display: block;
-            }
            .involved{
 
                width: 500px;
@@ -221,9 +212,6 @@ font-family: raleway;
                 border:2px solid white;
               color: white;
 
-            }
-            .button4:hover + #add4{
-              display: block;
             }
 
           #metro:hover {opacity: 0.7;}
@@ -290,7 +278,7 @@ font-family: raleway;
           <h4 id="probs">our problem:</h4>
             <p class="problem">
                 <ul id="probs">
-                    <li><button class="button button1" onmouseover="myFunction()" title=" Click for Stats"><center><p class="imp">With global temperatures on the rise, we need to consider ways to curb overall carbon emissions. To do so, we can start by minimizing the usage of private vehicles by repopularizing public transportation. </p></center></button></li><br>
+                    <li><button class="button button1" onclick="myFunction()" title=" Click for Stats"><center><p class="imp">With global temperatures on the rise, we need to consider ways to curb overall carbon emissions. To do so, we can start by minimizing the usage of private vehicles by repopularizing public transportation. </p></center></button></li><br>
                     <span id="extra">
                         <li>A typical passenger vehicle emits about <a href="https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle">4.6 metric tons of carbon dioxide per year.</a></li><br>
                      <li>Cars release approximately 333 million tons of carbon dioxide into the atmosphere annually comprising 20% of the world's total, according to the <a href="https://www.edf.org/">Environmental Defense Fund.</a></li><br>
@@ -323,7 +311,7 @@ font-family: raleway;
             <div class="col s12 center">
 
               <h4 id="sol">explore solutions:</h4>
-               <button class="button button2"  title=" Click for More"> <p class="solution"> As of 2010, the US Publishers Ward estimated that there were 1.01 billion motor vehicles in use with approximately 333 million tons of emitted carbon annually. With global temperatures rising,we must consider finding a way to minimize the usage of private vehicles.Therefore, instead of waiting for technology to catch up with our demand for more eco friendly altenatives, we can take matters in our own hands by using public transport
+               <button class="button button2" onclick="myFunction2()" title=" Click for More"> <p class="solution"> As of 2010, the US Publishers Ward estimated that there were 1.01 billion motor vehicles in use with approximately 333 million tons of emitted carbon annually. With global temperatures rising,we must consider finding a way to minimize the usage of private vehicles.Therefore, instead of waiting for technology to catch up with our demand for more eco friendly altenatives, we can take matters in our own hands by using public transport
                    </p> </button>
 
                     <span id="add"> Visit <a href="https://cotap.org/reduce-carbon-emissions/"> Carbon Offsets to Alleviate Property<div id="coap"><img src="jamiecoap.jpg" width="104" height="50" /></div></a> for more alternatives.</span>
@@ -350,7 +338,7 @@ font-family: raleway;
       <div class="row">
         <div class="col s12 center">
           <h4 id="ben">benefits of public transport:</h4>
-          <button class="button button3"  title=" Click for More"> <ul class="benefits">
+          <button class="button button3" onclick="myFunction3()" title=" Click for More"> <ul class="benefits">
 
                   <center><li ><b>Reduces air pollution</b></li><br>
                   <li > <b>Increased fuel efficiency</b> by decreasing the amount of energy needed for overall transportation</li><br>
@@ -380,7 +368,7 @@ font-family: raleway;
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 id="involve">get involved:</h4>
-          <button class="button button4"  title=" Click for More"><p class="involved">
+          <button class="button button4" onclick="myFunction4()" title=" Click for More"><p class="involved">
               Consider taking the Metro bus or rail in your area! <br>
 
               <iframe src="https://www.ridemetroapp.org/systemmap/index.aspx?z=11&lat=29.750137&lon=-95.371023" width="100%" height="500px" ></iframe>
@@ -408,7 +396,42 @@ font-family: raleway;
 
 
 
+ <script>
 
+   function myFunction() {
+ var x = document.getElementById("extra");
+ if (x.style.display === "block") {
+ x.style.display = "none";
+ } else {
+ x.style.display = "block";
+ }
+ }
+    function myFunction2() {
+ var x = document.getElementById("add");
+ if (x.style.display === "block") {
+ x.style.display = "none";
+ } else {
+ x.style.display = "block";
+ }
+ }
+        function myFunction3() {
+ var x = document.getElementById("add3");
+ if (x.style.display === "block") {
+ x.style.display = "none";
+ } else {
+ x.style.display = "block";
+ }
+ }
+ function myFunction4() {
+ var x = document.getElementById("add4");
+ if (x.style.display === "block") {
+ x.style.display = "none";
+ } else {
+ x.style.display = "block";
+ }
+ }
+
+</script>
           </div>
         </div>
         <div class="footer-copyright">
