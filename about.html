@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="main.js"></script>
+  <link rel="shortcut icon" href="fav.png" type="image/x-icon" style = width: 100px>
+  <title>Mind Our Ground</title>
+</head>
+
+<body>
+
+<!-- NAV BAR -->
+<style>
+
+.sticky {
+  top:0px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+</style>
+<body>
+
+<div class="head" id="myHeader">
+
+  <div class = "head">
+  <id="navbar" display:inline-block;>
+  <table id = "navbar">
+    <tr>
+      <th><button id="navbar" class="logo" onclick="location.href='index.html'"> <img src="unnamed.png" style= width:250px; height:200px/> </button></th>
+      <th id = "home"><button class="bttn home" onclick="location.href='index.html'"> home </button></th>
+      <th id = "waste"><button class="bttn waste" onclick="location.href = 'waste.html'"> waste </button></th>
+      <th><button class="bttn recycling" onclick="location.href = 'recycling.html'"> recycling </button></th>
+      <th><button class="bttn transport" onclick="location.href = 'transport.html'"> transport </button></th>
+      <th id = "about"><button class="butn about" onclick="location.href = 'about.html'"> about </button></th>
+  </table>
+  </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<style>
+      .ppgirl{
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+
+      }
+      .ppgirl:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+      }
+      body {
+    font-family: 'Raleway';font-size: 22px;
+      }
+      .iconbox {
+    height: 128px;
+    padding: 20px;
+    top:-100px;
+
+      }
+      .iconbox > div {
+          text-align: center;
+          width: 128px;
+          margin-right: 50px;
+          display: inline-block;
+          vertical-align: top;
+
+
+
+      }
+      .iconbox p {
+          margin: 0;
+
+      }
+      #mydiv
+      {
+          font-size:60px;
+          margin-left: 50px;
+          position:relative;
+          top:-75px;
+
+      }
+      #mydiv a
+      {
+          font-size:30px;
+          margin-top: 10px;
+          float: right;
+          margin-right: 50px;
+      }
+      #school{
+        vertical-align: middle;
+        font-size: 15px;
+
+      }
+      #name{
+          vertical-align: middle;
+        text-align:center;
+
+        font-size: 30px;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* border-bottom: 2px solid black;
+        border-top: 2px solid black; */
+
+      }
+
+      #pic{
+         display: none
+      }
+      #school:hover + #pic{ //img is a sibling
+         display: block;
+      }
+</style>
+<body>
+      <div id="mydiv"><strong>ABOUT</strong> US<a>   meet the developers! </a></div>
+      <h6 style="position:relative;left:500px;top:-50px;">(click our icons check out our linkedins)</h6>
+
+      <center><div class="iconbox">
+          <div id="tut-icon">
+              <img class = "ppgirl" src="download.png" alt="cynthia" onclick="location.href = 'https://www.linkedin.com/in/cynthia-martinez-430240190'"/>
+              <br>
+              <p id="name">Cynthia Martinez</p>
+              <p id="school">Yes Prep East End </p>
+              <p id="page">[recycling plastics]</p>
+              <img id="pic" src="YES-Prep-East-End_SCHOOL-272x137.jpg"/>
+          </div>
+          <div id="vid-icon">
+              <img class = "ppgirl" src="images.png" alt="Macy"  onclick="location.href = 'https://www.linkedin.com/in/macy-huang-8021a4190'"/>
+              <p id="name">Macy Huang
+              <p id="school">Carnegie Vanguard High School</p>
+              <p id="page">[food waste] </p>
+            </p>
+          </div>
+          <div id="add-icon">
+              <img class = "ppgirl" src="download (1).png" alt="jamie" onclick="location.href = 'https://www.linkedin.com/in/jamie-le-16b820188/'">
+              <p id="name">Jamie <br>Le</br></p>
+              <p id="school">George Bush High School</p>
+              <p id="page">[public transport]</p>
+          </div>
+      </div></center>
+      <br>
+      </body>
+
+<h3 style="position:absolute; top:625px;left:50px;"><strong>Who Are We?</strong></h3>
+<p style="position:absolute; top:675px;left:50px;">We are a group of student developers based in Houston who are passionate about the preservation and conservation of our environment.
+  This project was developed in our time in the Girls Who Code program.
+  We're so grateful to our instructors, Ronda Wiley and Manvi Saxena, for their help in developing our website.
+</p>
+
+
+<div style = "height:0px; position:relative;">
+<div id = "gwc" style = "position:relative;top:400px;" onclick = "location.href= 'https://girlswhocode.com/'">
+<img src = "gwc.png" style = "margin-left:500px; margin-right:auto;width:200px;"onclick = "location.href= 'https://girlswhocode.com/'">
+</div>
+</div>
+
+
+
+
+
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="main.js"></script>
+  <link rel="shortcut icon" href="fav.png" type="image/x-icon" style = width: 100px>
+  <title>Mind Our Ground</title>
+</head>
+
+<body>
+
+<!-- NAV BAR -->
+<style>
+
+.sticky {
+  top:0px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header" id="myHeader"style="z-index: 7">
+
+  <div class = "head">
+  <id="navbar" display:inline-block;>
+      <table id = "navbar">
+        <tr>
+          <th><button id="navbar" class="logo" onclick="location.href='index.html'"> <img src="unnamed.png" style= width:250px; height:200px/> </button></th>
+          <th id = "home"><button class="butn home" onclick="location.href='index.html'"> home </button></th>
+          <th id = "waste"><button class="bttn waste" onclick="location.href = 'waste.html'"> waste </button></th>
+          <th><button class="bttn recycling" onclick="location.href = 'recycling.html'"> recycling </button></th>
+          <th><button class="bttn transport" onclick="location.href = 'transport.html'"> transport </button></th>
+          <th id = "about"><button class="bttn about" onclick="location.href = 'about.html'"> about </button></th>
+      </table>
+  </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+<!-- GALLERY -->
+
+<html>
+  <div class="slideshow-container">
+<ul>
+  <div class="mySlides fade">
+    <div class="numbertext">1/6</div>
+    <li class="crop">
+        <img src="1.png" />
+    </li>
+
+    <div class="text">   our  m i s s i o n   </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2/6</div>
+    <li class="crop">
+        <img src="2.jpg" />
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3/6</div>
+    <li class="crop">
+        <img src="3.jpg" />
+    </li>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4/6</div>
+    <li class="crop">
+        <img src="4.jpg" />
+    </li>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5/6</div>
+    <li class="crop">
+        <img src="5.jpg" />
+    </li>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6/6</div>
+    <li class="crop">
+        <img src="6.jpg" />
+    </li>
+  </div>
+</ul>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+</html>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+
+
+
+<br>
+
+<!-- TOPIC BUTTONS -->
+<div class = "needbreak" z-index="1">
+  <div class = "whytho">
+<table id = "topicbuttons">
+  <th>
+<a onclick="location.href='waste.html'">
+<img id="movImage" src="food.png" alt="food waste" style="width:260px;height:220px;">
+<img id="theImage" class = "static" src="food.gif" alt="food waste" style="width:260px;height:220px;">
+</a>
+</th>
+
+<th>
+<a href="C:\Users\mhuang\Desktop\mind our ground\recycling.html">
+<img id="movImage2" src="recycling.png" alt="food waste" style="width:260px;height:220px;" href = "recycling.html">
+<img id="theImage2" class = "static" src="recycling.gif" alt="food waste" style="width:260px;height:220px;">
+
+</a>
+</th>
+
+<th>
+<a href="transport.html">
+<img id="movImage3" src="bus.png" alt="food waste" style="width:260px;height:220px;">
+<img id="theImage3" class = "static" src="bus.gif" alt="food waste" style="width:260px;height:220px;">
+
+</a>
+</th>
+
+
+</table>
+<button id="myButton" class="bttn" style="height:50px;width:260px;z-index:6;margin-top: 15px;" onclick="location.href = 'waste.html'"><b>WASTE</b></button>
+<button id="myButton2" class="bttn" style="height:50px;width:260px;z-index:6;margin-top: 64px;"onclick="location.href = 'recycling.html'"><b> RECYCLING</b></button>
+<button id="myButton3" class="bttn" style="height:50px;width:260px;z-index:6;margin-top: 120px;"onclick="location.href = 'transport.html'"><b>TRANSPORT</b></button>
+</div>
+</div>
+
+  <!-- BLOCK QUOTE -->
+    <hr style="margin: auto auto; opacity: .5;">
+<div style="width: 960px; margin: 0 auto; padding-top: 20px; padding-bottom: 80px; z-index:-1">
+  <div class="testimonial-quote group" style="
+  margin-bottom: 300px;
+">
+<img src = "b.png"style="width: 1px; z-index:-100; ">
+<div style="position:relative;">
+        <img src="dal2.png"style="position:absolute; top:-350px;">
+        <img class = "static"src= "dal.png"style="position:absolute;top:-366px">
+      </div>
+        <div class="quote-container">
+            <blockquote>
+                <p>It is our collective and individual responsibility . . . to preserve and tend to the world in which we all live.</p>
+            </blockquote>
+        </div>
+    </div>
+
+    <hr style="margin: -350px auto; opacity: 0;">
+
+
+<div style = "height:100px;width:100%; background-color:#fafafa">
+  <br style = "height:100px;">
+<h2 style = "font-family:Raleway;position:relative;top:100px;">THIS WEBSITE IS DESIGNED EXCLUSIVELY FOR HOUSTON, TEXAS</h2>
+      </div>
+    <br>
+        <head>
+          <style>
+            /* Set the size of the div element that contains the map */
+            #map {
+              height: 400px;  /* The height is 400 pixels */
+              width:75%;
+              top:100px;
+              left:125px;
+             }
+
+          </style>
+
+
+        </head>
+        <body>
+          <!--The div element for the map -->
+          <div id="map"></div>
+
+
+                        <script>
+                    // Initialize and add the map
+                    function initMap() {
+  var houston = {lat: 29.7604, lng: -95.369};
+        // Create a new StyledMapType object, passing it an array of styles,
+        // and the name to be displayed on the map type control.
+        var styledMapType = new google.maps.StyledMapType(
+            [
+              {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
+              {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
+              {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
+              {
+                featureType: 'administrative',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#c9b2a6'}]
+              },
+              {
+                featureType: 'administrative.land_parcel',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#dcd2be'}]
+              },
+              {
+                featureType: 'administrative.land_parcel',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#ae9e90'}]
+              },
+              {
+                featureType: 'landscape.natural',
+                elementType: 'geometry',
+                stylers: [{color: '#dfd2ae'}]
+              },
+              {
+                featureType: 'poi',
+                elementType: 'geometry',
+                stylers: [{color: '#dfd2ae'}]
+              },
+              {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#93817c'}]
+              },
+              {
+                featureType: 'poi.park',
+                elementType: 'geometry.fill',
+                stylers: [{color: '#a5b076'}]
+              },
+              {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#447530'}]
+              },
+              {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{color: '#f5f1e6'}]
+              },
+              {
+                featureType: 'road.arterial',
+                elementType: 'geometry',
+                stylers: [{color: '#fdfcf8'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{color: '#f8c967'}]
+              },
+              {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#e9bc62'}]
+              },
+              {
+                featureType: 'road.highway.controlled_access',
+                elementType: 'geometry',
+                stylers: [{color: '#e98d58'}]
+              },
+              {
+                featureType: 'road.highway.controlled_access',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#db8555'}]
+              },
+              {
+                featureType: 'road.local',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#806b63'}]
+              },
+              {
+                featureType: 'transit.line',
+                elementType: 'geometry',
+                stylers: [{color: '#dfd2ae'}]
+              },
+              {
+                featureType: 'transit.line',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#8f7d77'}]
+              },
+              {
+                featureType: 'transit.line',
+                elementType: 'labels.text.stroke',
+                stylers: [{color: '#ebe3cd'}]
+              },
+              {
+                featureType: 'transit.station',
+                elementType: 'geometry',
+                stylers: [{color: '#dfd2ae'}]
+              },
+              {
+                featureType: 'water',
+                elementType: 'geometry.fill',
+                stylers: [{color: '#b9d3c2'}]
+              },
+              {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#92998d'}]
+              }
+            ],
+            {name: 'Styled Map'});
+
+        // Create a map object, and include the MapTypeId to add
+        // to the map type control.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: houston,
+          zoom: 10,
+          mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                    'styled_map']
+          }
+        });
+
+        //Associate the styled map with the MapTypeId and set it to display.
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+      }
+
+                        </script>
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo5P7XOZITIcd8PZlFYwM2X6fLEtb-ViU&callback=initMap">
+                        </script>
+                      </body>
+                    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
