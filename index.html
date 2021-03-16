@@ -212,184 +212,31 @@ function myFunction() {
     <hr style="margin: -350px auto; opacity: 0;">
 
 
-<div style = "height:100px;width:100%; background-color:#fafafa">
-  <br style = "height:100px;">
-<h2 style = "font-family:Raleway;position:relative;top:100px;">THIS WEBSITE IS DESIGNED EXCLUSIVELY FOR HOUSTON, TEXAS</h2>
-      </div>
-    <br>
-        <head>
-          <style>
-            /* Set the size of the div element that contains the map */
-            #map {
-              height: 400px;  /* The height is 400 pixels */
-              width:75%;
-              top:100px;
-              left:125px;
-             }
-
-          </style>
-
-
-        </head>
-        <body>
-          <!--The div element for the map -->
-          <div id="map"></div>
-
-
-                        <script>
-                    // Initialize and add the map
-                    function initMap() {
-  var houston = {lat: 29.7604, lng: -95.369};
-        // Create a new StyledMapType object, passing it an array of styles,
-        // and the name to be displayed on the map type control.
-        var styledMapType = new google.maps.StyledMapType(
-            [
-              {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
-              {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
-              {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
-              {
-                featureType: 'administrative',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#c9b2a6'}]
-              },
-              {
-                featureType: 'administrative.land_parcel',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#dcd2be'}]
-              },
-              {
-                featureType: 'administrative.land_parcel',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#ae9e90'}]
-              },
-              {
-                featureType: 'landscape.natural',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'poi',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'poi',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#93817c'}]
-              },
-              {
-                featureType: 'poi.park',
-                elementType: 'geometry.fill',
-                stylers: [{color: '#a5b076'}]
-              },
-              {
-                featureType: 'poi.park',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#447530'}]
-              },
-              {
-                featureType: 'road',
-                elementType: 'geometry',
-                stylers: [{color: '#f5f1e6'}]
-              },
-              {
-                featureType: 'road.arterial',
-                elementType: 'geometry',
-                stylers: [{color: '#fdfcf8'}]
-              },
-              {
-                featureType: 'road.highway',
-                elementType: 'geometry',
-                stylers: [{color: '#f8c967'}]
-              },
-              {
-                featureType: 'road.highway',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#e9bc62'}]
-              },
-              {
-                featureType: 'road.highway.controlled_access',
-                elementType: 'geometry',
-                stylers: [{color: '#e98d58'}]
-              },
-              {
-                featureType: 'road.highway.controlled_access',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#db8555'}]
-              },
-              {
-                featureType: 'road.local',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#806b63'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#8f7d77'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'labels.text.stroke',
-                stylers: [{color: '#ebe3cd'}]
-              },
-              {
-                featureType: 'transit.station',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'water',
-                elementType: 'geometry.fill',
-                stylers: [{color: '#b9d3c2'}]
-              },
-              {
-                featureType: 'water',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#92998d'}]
-              }
-            ],
-            {name: 'Styled Map'});
-
-        // Create a map object, and include the MapTypeId to add
-        // to the map type control.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: houston,
-          zoom: 10,
-          mapTypeControlOptions: {
-            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-                    'styled_map']
-          }
-        });
-
-        //Associate the styled map with the MapTypeId and set it to display.
-        map.mapTypes.set('styled_map', styledMapType);
-        map.setMapTypeId('styled_map');
-      }
-
-                        </script>
-                        <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo5P7XOZITIcd8PZlFYwM2X6fLEtb-ViU&callback=initMap">
-                        </script>
-                      </body>
-                    </html>
+<div style = "height:100px;width:100%; background-color:#fafafa"></div>
+  
+  </div>
 
 
 
 
 
+<div style = "z-index: 7; margin-top:100px">
+  <div class = "foot">
+  <id="navbar" style = "display: inline-block; ">
+      <table id = "navbar">
+        <tr>
 
+          <th id = "home"> <button class= "butn" onclick = "location.href = 'index.html'"> home </button> </th>
+          <th id = "waste"> <button class = "bttn" onclick = "location.href = 'waste.html'"> waste </button> </th>
+          <th> <button class = "bttn recycling" onclick = "location.href = 'recycling.html'"> recycling </button> </th>
+          <th> <button class = "bttn transport" onclick = "location.href = 'transport.html'"> transport </button> </th>
+          
+          <th id = "about" ><button class = "bttn" onclick = "location.href = 'about.html'"> about </button> </th>
+      </table>
 
+      <a style = "font-family: raleway; font-size:12px">© 2021 Copyright: Macy Huang</a>
 
-
-
-
-
-
-
+  </div>
+</div>
 </body>
 </html>
