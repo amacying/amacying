@@ -33,6 +33,8 @@
   </div>
 </div>
 
+</html>
+
 <!-- sticky header -->
 <script>
 window.onscroll = function() {sticky()};
@@ -54,7 +56,7 @@ function myFunction() {
 <!-- gallery -->
 
 <html>
-  <div class = "slideshow-container" style = "margin: auto; ">
+  <div class = "slideshow-container" style = "margin: auto;">
 <ul>
   <div class = "mySlides fade">
     <div class = "numbertext"> 1/6 </div>
@@ -150,37 +152,43 @@ function myFunction() {
 
 <!-- TOPIC BUTTONS -->
 <div class = "needbreak" z-index="1">
-  <div class = "whytho">
-<table id = "topicbuttons">
-  <th>
-<a onclick="location.href='waste.html'">
-<img id="movImage" src="food.png" alt="food waste" style="width:260px;height:220px;">
-<img id="theImage" class = "static" src="food.gif" alt="food waste" style="width:260px;height:220px;">
-</a>
-</th>
+      <div class = "whytho">
+        <button id="myButton" onclick="location.href = 'waste.html'""><b>WASTE</b></button>
+      </div>
+      <a onclick="location.href='waste.html'"></a>
+      <div class = "imageCont1">
+        <div class = "image1">
+        <img src="food.png" alt="food waste" style = "border-radius:30px">
+      </div>
+      <div class = "image1">
+        <img class = "static" src="food.gif" alt="food waste" style = "border-radius:30px">
+      </div>
+      </div>
+      <div class = "whytho">
+        <button id="myButton" onclick="location.href = 'recycling.html'"><b> RECYCLING</b></button>
+      </div>
+      <a href="recycling.html"></a>
+      <div class = "imageCont1">
+        <div class = image1>
+       <img src="recycling.png" alt="food waste" href = "recycling.html" style = "border-radius:30px">
+      </div>
+       <div class = "image1">
+       <img  class = "static" src="recycling.gif" alt="food waste" style = "border-radius:30px">
+      </div>
+      </div>
+      <div class = "whytho">
+        <button id="myButton" onclick="location.href = 'transport.html'"><b>TRANSPORT</b></button>
+      </div>
+        <a href="transport.html">        </a>
+      <div class = "imageCont1">
+        <div class = "image1">
+        <img src="bus.png" alt="food waste" style="width:260px;height:220px; border-radius:30px">
+      </div>
+      <div class = "image1">
+        <img class = "static" src="bus.gif" alt="food waste" style="width:260px;height:220px;border-radius:30px">
+      </div>
+      </div>
 
-<th>
-<a href="C:\Users\mhuang\Desktop\mind our ground\recycling.html">
-<img id="movImage2" src="recycling.png" alt="food waste" style="width:260px;height:220px;" href = "recycling.html">
-<img id="theImage2" class = "static" src="recycling.gif" alt="food waste" style="width:260px;height:220px;">
-
-</a>
-</th>
-
-<th>
-<a href="transport.html">
-<img id="movImage3" src="bus.png" alt="food waste" style="width:260px;height:220px;">
-<img id="theImage3" class = "static" src="bus.gif" alt="food waste" style="width:260px;height:220px;">
-
-</a>
-</th>
-
-
-</table>
-<button id="myButton" class="bttn" style="height:50px;width:260px;z-index:6;margin-top: 15px;" onclick="location.href = 'waste.html'"><b>WASTE</b></button>
-<button id="myButton2" class="bttn" style="height:50px;width:260px;z-index:6;margin-top: 64px;"onclick="location.href = 'recycling.html'"><b> RECYCLING</b></button>
-<button id="myButton3" class="bttn" style="height:50px;width:260px;z-index:6;margin-top: 120px;"onclick="location.href = 'transport.html'"><b>TRANSPORT</b></button>
-</div>
 </div>
 
   <!-- BLOCK QUOTE -->

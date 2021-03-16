@@ -224,142 +224,57 @@ img {vertical-align: middle;}
 
 
 
-
-
-
-
-
-
-
-
-
 /* topic buttons */
   .needbreak{
-    height:260px;
     background-color:#f2f2f2;
-    width:1245px;
-    /* margin-left:100px; */
+    width:100%;
+    display: inline-flex;
+    height:300px;
+    padding-left:10%;
+    justify-content:space-between;
   }
 
   .whytho {
     background-color:black;
     height:0px;
   }
-  #theImage {
-      border-radius: 25px;
-      position:absolute;
-      margin-left: 115px;
-      /* margin-right: auto; */
-      margin-top: 20px;
-      display: block;
-      width: auto;
-      height: auto;
-      width: 400px;
-  }
-  #movImage {
-      border-radius: 25px;
-      position:absolute;
-      margin-left: 115px;
-      /* margin-right: auto; */
-      margin-top: 20px;
-      display: block;
-      width: auto;
-      height: auto;
-      width: 400px;
+  .imageCont1{
+    top:40px;
+    position:relative;
+    width:30%;
   }
 
-  #theImage2 {
-      border-radius: 25px;
-      position:absolute;
-      margin-left: 480px;
-      /* margin-right: auto; */
-      margin-top: 20px;
-      display: block;
-      width: auto;
-      height: auto;
-      width: 400px;
-  }
-  #movImage2 {
-      border-radius: 25px;
-      position:absolute;
-      margin-left: 480px;
-      /* margin-right: auto; */
-      margin-top: 20px;
-      display: block;
-      width: auto;
-      height: auto;
-      width: 400px;
+  .image1{
+    position: absolute;
   }
 
-  #theImage3 {
-      border-radius: 25px;
-      position:absolute;
-      margin-left: 850px;
-      /* margin-right: auto; */
-      margin-top: 20px;
-      display: block;
-      width: auto;
-      height: auto;
-      width: 400px;
-  }
-  #movImage3 {
-      border-radius: 25px;
-      position:absolute;
-      margin-left: 850px;
-      margin-right: auto;
-      margin-top: 20px;
-      display: block;
-      width: auto;
-      height: auto;
-      width: 400px;
-  }
 
   .static:hover{
     opacity:0;
   }
+
   #myButton {
-    padding:0;
-    border:10px;
-    border-color:white;
-      font-family: 'Raleway', sans-serif;
-      position: absolute;
-      font-size:22px;
-      font-style:italic;
-      left: 126px;
-      top: 640px;
-      color: white;
-      text-align: left;
-  }
-
-  #myButton2 {
-    padding:0;
+    height:50px;
+    width:260px;
+    background-color:black;
+    z-index:1;
+    margin-top: 7%;
     border:0;
-      font-family: 'Raleway', sans-serif;
-      position: absolute;
-      font-size:22px;
-      font-style:italic;
-      left: 495px;
-      top: 585px;
-      color: white;
-      text-align:right;
+    margin-left:2.25%;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    font-size:22px;
+    font-style:italic;
+    color: white;
+    text-align: left;
   }
 
-  #myButton3 {
-    padding:0;
-    border:0;
-      font-family: 'Raleway', sans-serif;
-      position: absolute;
-      font-size:22px;
-      font-style:italic;
-      left: 869px;
-      top: 530px;
-      color: white;
-      text-align:right;
-  }
-
-  .bttn:hover {
+  #myButton:hover{
+    opacity:80%;
     background-color:green;
   }
+
+
 
 
 
@@ -377,8 +292,7 @@ img {vertical-align: middle;}
       margin: 0;
       padding: 0;
       background: none;
-      color: gray;
-      font-family: Georgia, serif;
+      font-family: Georgia, 'Times New Roman', Times, serif, serif;
       font-size: 1.5em;
       font-style: italic;
       margin: 0;
@@ -394,9 +308,8 @@ img {vertical-align: middle;}
   }
 
   .testimonial-quote blockquote p:first-child:before {
-    color:gray;
       content: '\201C';
-      color: maroon;
+      color: green;
       font-size: 7.5em;
       font-weight: 700;
       opacity: .3;
