@@ -15,20 +15,27 @@
 
 <body>
 
-  <div class="head" id="myHeader">
 
-    <div class = "head">
-    <id="navbar" display:inline-block;>
-    <table id = "navbar">
-      <tr>
-        <th><button id="navbar" class="logo" onclick="location.href='index.html'"> <img src="unnamed.png" style= width:250px; height:200px/> </button></th>
-        <th id = "home"><button class="bttn home" onclick="location.href='index.html'"> home </button></th>
-        <th id = "waste"><button class="bttn waste" onclick="location.href = 'waste.html'"> waste </button></th>
-        <th><button class="bttn recycling" onclick="location.href = 'recycling.html'"> recycling </button></th>
-        <th><button class="butn transport" onclick="location.href = 'transport.html'"> transport </button></th>
-        <th id = "about"><button class="bttn about" onclick="location.href = 'about.html'"> about </button></th>
-    </table>
+
+    <!-- nav bar, html css js -->
+  <div style="z-index: 7; width:100%; background-color:#fafafa">
+    <div class="head" style = "width:100%; background-color:#fafafa">
+    <div id=" navbar" style="display: inline-block;left:0;width:100%; text-align:center; top:0">
+      <div class="headcenter" style="display:flex">
+        <table id="navbar" style = "display:flex; width:100%; justify-content:center; top:0">
+          <tr>
+            <th> <button id="navbar" class="logo" onclick="location.href='index.html'"> <img src="unnamed.png"
+                  style="width:250px;" /> </button> </th>
+            <th id="home"> <button class="bttn" onclick="location.href = 'index.html'"> home </button> </th>
+            <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+            <th> <button class="bttn" onclick="location.href = 'recycling.html'"> recycling </button> </th>
+            <th> <button class="butn" onclick="location.href = 'transport.html'"> transport </button> </th>
+            <th id="about"><button class="bttn" onclick="location.href = 'about.html'"> about </button> </th>
+          </tr>
+        </table>
+      </div>
     </div>
+  </div>
   </div>
 
 
@@ -234,9 +241,9 @@ font-family: raleway;
 -->
 
 <body>
-
+<div class = "content">
     <!-- public transport title banner-->
-          <div id="index-banner" class="parallax-container">
+          <div id="index-banner" class="parallax-container" style = "padding-left:20%; padding-top:5%;">
                 <div class="section no-pad-bot">
                       <div class="container">
                             <div id="mydiv">PUBLIC<b> TRANSPORT</b> </div>
@@ -379,7 +386,7 @@ font-family: raleway;
           </div>
         </div>
 
-
+      </div>
     <!---->
       <footer class="page-footer black" style = "height:auto;">
         <div class="container">
@@ -440,7 +447,27 @@ font-family: raleway;
           </div>
         </div>
       </footer>
-
+      <div style="z-index: 7; margin-top:100px">
+        <div class="foot">
+          <id="navbar" style="display: inline-block; ">
+            <table id="navbar">
+              <tr>
+      
+                <th id="home"> <button class="bttn" onclick="location.href = 'index.html'"> home </button> </th>
+                <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+                <th> <button class="bttn recycling" onclick="location.href = 'recycling.html'"> recycling </button>
+                </th>
+                <th> <button class="butn transport" onclick="location.href = 'transport.html'"> transport </button>
+                </th>
+      
+                <th id="about"><button class="bttn" onclick="location.href = 'about.html'"> about </button> </th>
+              </tr>
+            </table>
+      
+            <a class = "copyright">© 2021 Copyright: Macy Huang, Jamie Le, Cynthia Martinez. See <div style = "display:inline; cursor:pointer;" onclick="location.href = 'https://docs.google.com/document/d/1R8NllietD9zgMn5RbRRBaDPXePEhWeysbHqd-3s2geI/edit?usp=sharing'">references.</div> </a>
+      
+        </div>
+      </div>
 
       <!--  Scripts-->
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

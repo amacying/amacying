@@ -4,51 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="main.js"></script>
-  <link rel="shortcut icon" href="fav.png" type="image/x-icon" style = width: 100px>
-  <title>Mind Our Ground</title>
-</head>
-
-<body>
-
-<!-- NAV BAR -->
-<style>
-
-.sticky {
-  top:0px;
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-}
-
-</style>
-</head>
-<body>
-
-<div class="header" id="myHeader">
-
-  <div class = "head">
-  <id="navbar" display:inline-block;>
-  <table id = "navbar">
-    <tr>
-      <th><button id="navbar" class="logo" onclick="location.href='index.html'"> <img src="unnamed.png" style= width:250px; height:200px/> </button></th>
-      <th id = "home"><button class="bttn home" onclick="location.href='index.html'"> home </button></th>
-      <th id = "waste"><button class="bttn waste" onclick="location.href = 'waste.html'"> waste </button></th>
-      <th><button class="butn recycling" onclick="location.href = 'recycling.html'"> recycling </button></th>
-      <th><button class="bttn transport" onclick="location.href = 'transport.html'"> transport </button></th>
-      <th id = "about"><button class="bttn about" onclick="location.href = 'about.html'"> about </button></th>
-  </table>
-  </div>
-</div>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
 
       <!-- CSS  -->
       <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet'>
@@ -58,6 +13,45 @@
 
   <!-- MAP PAD IMAGE -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="main.js"></script>
+  <link rel="shortcut icon" href="fav.png" type="image/x-icon" style = "width: 100px">
+  <title>Mind Our Ground</title>
+</head>
+
+<body>
+
+</head>
+<body>
+
+  <!-- nav bar, html css js -->
+  <div style="z-index: 7">
+    <div class="head"">
+      <div id="navbar" style="display: inline-block;padding-top:10px;left:0;width:100%; text-align:center">
+        <div class = "headcenter" style="display:flex">
+        <table id = "navbar">
+          <tr>
+            <th> <button id = "navbar"class="logo" onclick="location.href='index.html'"> <img src="unnamed.png" style="width:250px;" /> </button> </th>
+            <th id="home"> <button class="bttn" onclick="location.href = 'index.html'"> home </button> </th>
+            <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+            <th> <button class="butn" onclick="location.href = 'recycling.html'"> recycling </button> </th>
+            <th> <button class="bttn" onclick="location.href = 'transport.html'"> transport </button> </th>
+            <th id="about"><button class="bttn" onclick="location.href = 'about.html'"> about </button> </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
   <style>
             body {font-family: Raleway;}
 .parallax{
@@ -179,9 +173,24 @@
 
 
 
-<div class="content">
 
-</div>
+  <div class = "content">
+
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
+
 
 
 
@@ -378,7 +387,28 @@
     <script src="js/init.js"></script>
 
 </footer>
+</div>
+<div style="z-index: 7; margin-top:100px">
+  <div class="foot">
+    <id="navbar" style="display: inline-block; ">
+      <table id="navbar">
+        <tr>
 
+          <th id="home"> <button class="bttn" onclick="location.href = 'index.html'"> home </button> </th>
+          <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+          <th> <button class="butn recycling" onclick="location.href = 'recycling.html'"> recycling </button>
+          </th>
+          <th> <button class="bttn transport" onclick="location.href = 'transport.html'"> transport </button>
+          </th>
+
+          <th id="about"><button class="bttn" onclick="location.href = 'about.html'"> about </button> </th>
+        </tr>
+      </table>
+
+      <a class = "copyright">© 2021 Copyright: Macy Huang, Jamie Le, Cynthia Martinez. See <div style = "display:inline; cursor:pointer;" onclick="location.href = 'https://docs.google.com/document/d/1R8NllietD9zgMn5RbRRBaDPXePEhWeysbHqd-3s2geI/edit?usp=sharing'">references.</div> </a>
+
+  </div>
+</div>
 
   </body>
 </html>
