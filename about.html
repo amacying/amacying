@@ -12,130 +12,47 @@
 <body>
 
 <!-- NAV BAR -->
-<style>
-
-.sticky {
-  top:0px;
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-}
-
-</style>
-<body>
-
-<div class="head" id="myHeader">
-
-  <div class = "head">
-  <id="navbar" display:inline-block;>
-  <table id = "navbar">
-    <tr>
-      <th><button id="navbar" class="logo" onclick="location.href='index.html'"> <img src="unnamed.png" style= width:250px; height:200px/> </button></th>
-      <th id = "home"><button class="bttn home" onclick="location.href='index.html'"> home </button></th>
-      <th id = "waste"><button class="bttn waste" onclick="location.href = 'waste.html'"> waste </button></th>
-      <th><button class="bttn recycling" onclick="location.href = 'recycling.html'"> recycling </button></th>
-      <th><button class="bttn transport" onclick="location.href = 'transport.html'"> transport </button></th>
-      <th id = "about"><button class="butn about" onclick="location.href = 'about.html'"> about </button></th>
-  </table>
+  <!-- nav bar, html css js -->
+  <div style="z-index: 7; width:100%; background-color:#fafafa">
+    <div class="head" style = "width:100%; background-color:#fafafa">
+    <div id=" navbar" style="display: inline-block;left:0;width:100%; text-align:center; top:0">
+      <div class="headcenter" style="display:flex">
+        <table id="navbar" style = "display:flex; width:100%; justify-content:center; top:0">
+          <tr>
+            <th> <button id="navbar" class="logo" onclick="location.href='index.html'"> <img src="unnamed.png"
+                  style="width:250px;" /> </button> </th>
+            <th id="home"> <button class="bttn" onclick="location.href = 'index.html'"> home </button> </th>
+            <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+            <th> <button class="bttn" onclick="location.href = 'recycling.html'"> recycling </button> </th>
+            <th> <button class="bttn" onclick="location.href = 'transport.html'"> transport </button> </th>
+            <th id="about"><button class="butn" onclick="location.href = 'about.html'"> about </button> </th>
+          </tr>
+        </table>
+      </div>
+    </div>
   </div>
-</div>
+  </div>
 
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-
-
-<style>
-      .ppgirl{
-      display: inline-block;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-
+  <!-- sticky header -->
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
       }
-      .ppgirl:hover{
-        -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5);
-      }
-      body {
-    font-family: 'Raleway';font-size: 22px;
-      }
-      .iconbox {
-    height: 128px;
-    padding: 20px;
-    top:-100px;
+    }
+    </script>
 
-      }
-      .iconbox > div {
-          text-align: center;
-          width: 128px;
-          margin-right: 50px;
-          display: inline-block;
-          vertical-align: top;
+  <div class="content">
 
-
-
-      }
-      .iconbox p {
-          margin: 0;
-
-      }
-      #mydiv
-      {
-          font-size:60px;
-          margin-left: 50px;
-          position:relative;
-          top:-75px;
-
-      }
-      #mydiv a
-      {
-          font-size:30px;
-          margin-top: 10px;
-          float: right;
-          margin-right: 50px;
-      }
-      #school{
-        vertical-align: middle;
-        font-size: 15px;
-
-      }
-      #name{
-          vertical-align: middle;
-        text-align:center;
-
-        font-size: 30px;
-
-        padding-top: 5px;
-        padding-bottom: 5px;
-        /* border-bottom: 2px solid black;
-        border-top: 2px solid black; */
-
-      }
-
-      #pic{
-         display: none
-      }
-      #school:hover + #pic{ //img is a sibling
-         display: block;
-      }
-</style>
-<body>
-      <div id="mydiv"><strong>ABOUT</strong> US<a>   meet the developers! </a></div>
-      <h6 style="position:relative;left:500px;top:-50px;">(click our icons check out our linkedins)</h6>
+      <h1 style = "text-align:center;"><strong>ABOUT</strong> US<a>   meet the developers! </a></h1>
+      <h6">(click our icons check out our linkedins)</h6>
 
       <center><div class="iconbox">
           <div id="tut-icon">
@@ -161,7 +78,6 @@ function myFunction() {
           </div>
       </div></center>
       <br>
-      </body>
 
 <h3 style="position:absolute; top:625px;left:50px;"><strong>Who Are We?</strong></h3>
 <p style="position:absolute; top:675px;left:50px;">We are a group of student developers based in Houston who are passionate about the preservation and conservation of our environment.
@@ -175,7 +91,32 @@ function myFunction() {
 <img src = "gwc.png" style = "margin-left:500px; margin-right:auto;width:200px;"onclick = "location.href= 'https://girlswhocode.com/'">
 </div>
 </div>
+</div>
+<br>
 
+<div style="z-index: 7; margin-top:100px">
+  <div class="foot">
+    <id="navbar" style="display: inline-block; ">
+      <table id="navbar">
+        <tr>
+
+          <th id="home"> <button class="bttn" onclick="location.href = 'index.html'"> home </button> </th>
+          <th id="waste"> <button class="bttn" onclick="location.href = 'waste.html'"> waste </button> </th>
+          <th> <button class="bttn recycling" onclick="location.href = 'recycling.html'"> recycling </button>
+          </th>
+          <th> <button class="bttn transport" onclick="location.href = 'transport.html'"> transport </button>
+          </th>
+
+          <th id="about"><button class="butn" onclick="location.href = 'about.html'"> about </button> </th>
+        </tr>
+      </table>
+
+      <a style="font-family: raleway; font-size:12px">© 2021 Copyright: Macy Huang, Jamie Le, Cynthia Martinez</a>
+
+  </div>
+</div>
+
+</body>
 
 
 

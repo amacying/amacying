@@ -15,11 +15,8 @@
   border-radius:0px;
 }
 
-.sticky {
-  top: 0px;
-  z-index: 1;
-  position: fixed;
-  width: 100%;
+.headcenter{
+  justify-content:center;
 }
 
 /* nav bar spacing */
@@ -37,6 +34,7 @@
   width:150px;
   text-align:right;
 }
+
 
 /* button interactivity */
 .butn {
@@ -288,23 +286,21 @@ img {vertical-align: middle;}
 
   /* QUOTE */
   .testimonial-quote blockquote {
-      border: 0;
-      margin: 0;
-      padding: 0;
-      background: none;
+      display:flex;
       font-family: Georgia, 'Times New Roman', Times, serif, serif;
       font-size: 1.5em;
       font-style: italic;
-      margin: 0;
       position: relative;
-      text-shadow: 0 1px white;
-      /* z-index: 600; */
-      top: -550px;
-      left: -150px;
+      justify-content:center;
+      left:200px;
+      width:900px;
   }
   .testimonial-quote blockquote p {
       color: black;
       line-height: 1.4 !important;
+      justify-content:center;
+      text-align:center;
+
   }
 
   .testimonial-quote blockquote p:first-child:before {
@@ -314,21 +310,13 @@ img {vertical-align: middle;}
       font-weight: 700;
       opacity: .3;
       position: relative;
-      left: -.2em;
       text-shadow: none;
-      top: 60px;
-      left:0px;
-
   }
 
   .testimonial-quote img {
-      display: block;
-      width: 280px;
-      height: 440px;
       position: relative;
-      /* top: 150px; */
-      left: 700px;
-      top:60px;
+      left:1200px;
+      top:150px;
   }
 
   .testimonial-quote {
@@ -336,14 +324,13 @@ img {vertical-align: middle;}
   }
 
   .testimonial-quote .quote-container {
-      padding-left: 160px;
-      width:1150px;
+      position:relative;
   }
 
 
   .testimonial-quote.right img {
-      left: auto;
-      right: 0;
+    position:relative;
+
   }
 
 
@@ -449,12 +436,8 @@ input[type=submit]:hover {
         .caption{
             position:relative;
         }
-        .problem{
-            margin-left: 50px;
-            margin-right: 50px;
-        }
+        
     #probs {
-        list-style:square;
         line-height:40px;
     }
     a>#coap { display: none; }
@@ -464,12 +447,6 @@ input[type=submit]:hover {
         text-align: left;
     }
 
-    .imp{
-      width: 60%;
-      border: 1px solid white;
-      padding:25px;
-      word-break: keep-all;
-    }
 
                 #extra {
           display: none;
@@ -580,12 +557,7 @@ font-family: raleway;
 
       }
 
-    #metro:hover {opacity: 0.7;}
-
-
-    body {
-      font-family: Raleway;
-    }
+   
 
     .parallax {
       filter: blur(8px);
@@ -593,8 +565,8 @@ font-family: raleway;
 
 
     #mydiv {
-      margin-top:30px;
-      padding:30px;
+      margin-top:80px;
+      padding:40px;
       border: 1px solid white;
       font-size: 60px;
       display:inline-block;
@@ -613,7 +585,6 @@ font-family: raleway;
 
     #packyobags {
       position:relative;
-      background-color: black;
       width: 100%;
     }
 
@@ -622,13 +593,27 @@ font-family: raleway;
       background-color: black;
     }
 
-    #quote {
-      position:relative;
-      background-color: rgba(0, 0, 0, .1);
-      color: WHITE;
-      height: inherit;
-      line-height: 40px;
+
+
+    .problem{
+      width:100%;
+      height:650px;
+      background-color:lightseagreen;
     }
+
+.contproblem{
+  position:relative;
+  left:22%;
+  top: 25px;
+}
+.imgproblem{
+  position:absolute;
+  padding:0;
+}
+
+.light{
+  height:50px;
+}
 
 
     /* nav bar bkgd */
@@ -640,18 +625,6 @@ font-family: raleway;
   border-radius:0px;
   padding:2%;
 }
-
-
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-
-
 
 
 
@@ -672,9 +645,8 @@ font-family: raleway;
  }
  
  .parallax-container {
-   min-height: 200px;
    line-height: 0;
-   height: auto;
+   height:1000px;
    color: rgba(255,255,255,.9);
  }
  
@@ -683,21 +655,7 @@ font-family: raleway;
      width: 100%;
    }
  
- @media only screen and (max-width : 992px) {
-   .parallax-container .section {
-     position: absolute;
-     top: 40%;
-   }
-   #index-banner .section {
-     top: 10%;
-   }
- }
- 
- @media only screen and (max-width : 600px) {
-   #index-banner .section {
-     top: 0;
-   }
- }
+
  
  .icon-block {
    padding: 0 15px;
@@ -712,3 +670,86 @@ font-family: raleway;
    background-color:black;
  }
  
+.sticky {
+  margin:0;
+  position: fixed;
+  background-color:#fafafa;
+  z-index:10;
+}
+.content{
+  top:200px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+ .ppgirl{
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+
+      }
+  .ppgirl:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+      }
+      body {
+    font-family: 'Raleway';font-size: 22px;
+      }
+      .iconbox {
+    height: 128px;
+    padding: 20px;
+    top:-100px;
+
+      }
+      .iconbox > div {
+          text-align: center;
+          width: 128px;
+          margin-right: 50px;
+          display: inline-block;
+          vertical-align: top;
+
+
+
+      }
+      .iconbox p {
+          margin: 0;
+
+      }
+
+      #mydiv a
+      {
+          font-size:30px;
+          margin-top: 10px;
+          float: right;
+          margin-right: 50px;
+      }
+      #school{
+        vertical-align: middle;
+        font-size: 15px;
+
+      }
+      #name{
+          vertical-align: middle;
+        text-align:center;
+
+        font-size: 30px;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* border-bottom: 2px solid black;
+        border-top: 2px solid black; */
+
+      }
+
+      #pic{
+         display: none
+      }
+      #school:hover + #pic{ 
+         display: block;
+      }
